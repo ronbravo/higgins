@@ -20,29 +20,39 @@ div#app {
   flex-direction: column;
   flex-grow: 2;
 }
-.hgn-higgins.app.root {
+.hgn-sketch.app.root {
   border: 0px solid blue;
   display: flex;
   flex-direction: column;
   flex-grow: 2;
 }
-.hgn-higgins.app.title > h2 {
+.hgn-sketch.app.title > h2 {
   font-size: 16px;
-  margin-bottom: 0;
+  margin: 0;
+  margin-top: 0px !important;
   display: inline-block;
   font-weight: bold;
 }
-.hgn-higgins.app.title > .description {
+.hgn-sketch.app.title > .description {
   border: 0px solid red;
   display: inline-block;
-  padding: 8px 8px;
+  padding: 8px 0px;
   font-size: 14px;
 }
-.hgn-main-component {
+.hgn-sketch.app.title ul {
+  margin: 0;
+  margin-bottom: 2px;
+}
+.hgn-sketch.app.title .uk-accordion-content {
+  margin: 0;
+  padding: 12px 8px;
+}
+.hgn-main-component.uk-card {
   border: 0px solid purple;
   display: flex;
   flex-grow: 2;
   flex-direction: column;
+  padding-top: 8px;
 }
 .hgn-main-component > .body {
   border: 1px solid @border-color;
@@ -133,4 +143,6 @@ div#app {
   height: 100%;
   width: 100%;
 }
-
+.uk-tab > .uk-active > a {
+  border-width: 2px;
+}
