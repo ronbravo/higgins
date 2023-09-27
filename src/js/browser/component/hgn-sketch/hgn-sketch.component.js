@@ -1,5 +1,5 @@
 import { getSketch } from './hgn-sketch.js';
-import { createTabsFromScenarios } from './scenarios.js';
+import { clearFrames, connectFrames, createTabsFromScenarios } from './scenarios.js';
 import mustache from 'mustache';
 
 import './hgn-sketch.less';
@@ -13,6 +13,11 @@ export class HgnSketchComponent extends HTMLElement {
     console.log ('connected');
     this.innerHTML = createHtml ();
     this.classList.add ('hgn-sketch', 'app', 'root');
+    connectFrames ();
+  }
+
+  disconnectedCallback () {
+    clearFrames ();
   }
 }
 

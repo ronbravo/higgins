@@ -15,11 +15,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "async": "^3.2.4",
     "axios": "^1.5.0",
     "dotenv": "^16.3.1",
     "marked": "^9.0.0",
     "mustache": "^4.2.0",
     "page": "^1.11.6",
+    "penpal": "^6.2.2",
     "uikit": "^3.16.26"
   },
   "devDependencies": {

@@ -1,4 +1,5 @@
 import './hgn-dashboard.less';
+import './hgn-dashboard.js';
 
 export class HgnDashboardComponent extends HTMLElement {
   constructor() {
